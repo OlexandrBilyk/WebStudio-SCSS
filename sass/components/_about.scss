@@ -1,0 +1,41 @@
+.about{
+  /* outline: 2px solid blue; */
+  padding: 0 0 94px;
+}
+
+.about__list{
+  /* gap: 30px; */
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 30px;
+  
+}
+.about__title{
+  color: var(--project-black);
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  margin: 0 0 50px ;
+  /* padding-top: 94px; */
+}
+.about-list__thumb{
+  position: relative;
+}
+.about-list__img{
+  width: 370px;
+  flex-shrink: 0;
+}
+.about-list__texte{
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--web-studio-white);   
+  width: 370px;
+  background-color:rgba(47, 48, 58, 0.8);
+  padding: 27px 113px ;
+  letter-spacing: 0.03em;
+  position: absolute;
+  bottom:3px;
+  
+}
