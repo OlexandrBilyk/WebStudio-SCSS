@@ -7,7 +7,7 @@ header{
   align-items: center;
   justify-content: space-between;
 }
-.header_pages{
+.header__pages{
   display: flex;
   gap: 93px;
   
@@ -82,16 +82,16 @@ gap: 50px;
   align-items: center;
   justify-content: center;
 }
-.contacts-email__svg{
+.contacts__icon--email{
   width: 16px;
   height: 12px;
   
 }
-.contacts-phone__svg{
+.contacts__icon--phone{
   width: 10px;
   height: 16px;
 }
-.contacts-email__svg, .contacts-phone__svg{
+.contacts__icon{
   fill: #757575;
   transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

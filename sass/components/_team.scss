@@ -22,7 +22,7 @@
   letter-spacing: 1.08px;
   margin: 50px;
 }
-.team__img{
+.team-list__img{
   width: 270px;
   height: 260px;
   flex-shrink: 0;
@@ -43,31 +43,31 @@
   font-weight: 400;
   letter-spacing: 0.48px;
 }
-.team-list__svgs{
+.team__networks{
   display:flex;
   justify-content:center;
   gap: 10px;
   align-items:center;
   margin-top: 20px;
 }
-.team-svgs__item{
+.team-networks__item{
   padding: 12px;
   border-radius: 22px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.team-svgs__item:hover{
+.team-networks__item:hover{
   background-color: var(--svg-hover);
 }
-.team-svgs__item:hover svg{
+.team-networks__item:hover svg{
   fill: var(--web-studio-white);
 }
-.team-list__svg{
+.team-netwoks__icon{
   fill: #afb1b8;
   width: 20px;
   height: 20px;
 } 
-.team-list__svg:hover{
+.team-netwoks__icon:hover{
   fill: var(--web-studio-white);
 }
