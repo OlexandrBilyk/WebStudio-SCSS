@@ -31,12 +31,11 @@
   border: none;
   flex-basis: calc(( 100% - 40px) / 5);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.descr-pages__btn:hover, .descr-pages__btn:focus {
-  border-color: var(--project-blue);
-  background-color: var(--project-blue);
-  color: var(--web-studio-white);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-  animation: jumpbtn 1s ease infinite alternate;
-  
+    &:hover, &:focus{
+      border-color: var(--project-blue);
+      background-color: var(--project-blue);
+      color: var(--web-studio-white);
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+      animation: jumpbtn 1s ease infinite alternate;
+    }
 }

@@ -4,7 +4,6 @@
 }
 
 .about__list{
-  /* gap: 30px; */
   display: grid;
   grid-template-columns: repeat(3, 370px);
   gap: 30px;
@@ -16,7 +15,6 @@
   font-size: 36px;
   letter-spacing: 1.08px;
   margin: 0 0 50px ;
-  /* padding-top: 94px; */
 }
 .about-list__thumb{
   position: relative;

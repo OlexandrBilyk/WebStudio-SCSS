@@ -22,22 +22,6 @@
   letter-spacing: 0.42px;
 }
 
-.rules-list__item:nth-child(1)::before{
-  content:"" ;
-  background-image:url('../images/anntena1.svg');
-}
-.rules-list__item:nth-child(2)::before{
-  content:"";
-  background-image:url('../images/clock1.svg');
-}
-.rules-list__item:nth-child(3)::before{
-  content:"";
-  background-image: url('../images/diagram1.svg');
-}
-.rules-list__item:nth-child(4)::before{
-  content:"";
-  background-image: url('../images/astronaut1.svg') ;
-}
 .rules-list__item::before{
   content: "";
   display: inline-block;
@@ -47,6 +31,22 @@
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  
- 
+}
+.rules-list__item{
+  &:nth-child(1)::before{
+    content:"" ;
+    background-image:url('../images/anntena1.svg');
+  }
+  &:nth-child(2)::before{
+    content:"";
+    background-image:url('../images/clock1.svg');
+  }
+  &:nth-child(3)::before{
+    content:"";
+    background-image: url('../images/diagram1.svg');
+  }
+  &:nth-child(4)::before{
+    content:"";
+    background-image: url('../images/astronaut1.svg') ;
+  }
 }

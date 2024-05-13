@@ -21,6 +21,12 @@
   position: relative;
   overflow: hidden;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    }
+    &:hover .descr__overlay{
+      transform: translatey(0);
+    }
 
 }
 .thumb{
@@ -29,15 +35,7 @@
   height: 294px;
   overflow: hidden;
 }
-.descr-list__item:hover{
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-}
-.descr-list__item:hover .descr-overlay__box{
-  transform: translatey(0);
-  
-}
-
-.descr-overlay__box{
+.descr__overlay{
   position: absolute;
   top: 0;
   left: 0;
