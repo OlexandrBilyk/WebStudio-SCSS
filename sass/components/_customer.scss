@@ -21,11 +21,11 @@
   padding: 17px 30px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover{
-    border-color: var(--svg-hover);
+    border-color: $svg-hover;
     cursor: pointer;
   }
   &:hover svg{
-    fill: var(--svg-hover);
+    fill: $svg-hover;
   }
 }
 .customer-list__icon{
@@ -35,7 +35,7 @@
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover{
-    fill: var(--svg-hover);
+    fill: $svg-hover;
       
   }
 }

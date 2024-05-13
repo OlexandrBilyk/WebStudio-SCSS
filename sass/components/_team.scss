@@ -9,13 +9,13 @@
 }
 .team-list__item{
   border-radius: 0px 0px 4px 4px;
-  background: var(--web-studio-white);
+  background: $web-studio-white;
   width: 270px;
   padding-bottom: 30px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .team__title{
-  color: var(--project-black);
+  color: $project-black;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
@@ -28,7 +28,7 @@
   margin-bottom: 30px;
 }
 .team-list__name{
-  color: var(--project-black);
+  color: $project-black;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -36,7 +36,7 @@
   margin-bottom:10px;
 }
 .team-list__work{
-  color: var(--project-grey);
+  color: $project-grey;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -55,10 +55,10 @@
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover{
-      background-color: var(--svg-hover);
+      background-color: $svg-hover;
     }
     &:hover svg{
-      fill: var(--web-studio-white);
+      fill: $web-studio-white;
     }
 }
 .team-netwoks__icon{
@@ -66,6 +66,6 @@
   width: 20px;
   height: 20px;
   &:hover{
-    fill: var(--web-studio-white);
+    fill: $web-studio-white;
   }
 } 

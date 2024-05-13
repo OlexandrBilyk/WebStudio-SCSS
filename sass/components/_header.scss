@@ -13,7 +13,7 @@ header{
   
 }
 .logo{
-  color: var(--project-blue);
+  color: $project-blue;
   font-family: 'Raleway',sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -30,7 +30,7 @@ header{
   text-decoration: none;
 }
 #header-logo__black{
-  color: var(--project-black);
+  color: $project-black;
 }
 .navigation{
   display: flex;
@@ -46,18 +46,18 @@ gap: 50px;
   position: relative;
 }
 .nav-list__link{
-  color: var(--project-black);
+  color: $project-black;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
   text-decoration: none;
   transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover{
-      color: var(--project-blue);
+      color: $project-blue;
     }
     &::after{
       content: '';
-      background-color: var(--svg-hover);
+      background-color: $svg-hover;
       border-radius: 2px;
       width: 0;
       height: 4px;
@@ -81,7 +81,7 @@ gap: 50px;
   align-items: center;
   justify-content: center;
   &:hover svg{
-    fill: var(--svg-hover);
+    fill: $svg-hover;
   }
 }
 .contacts__icon--email{
@@ -99,13 +99,13 @@ gap: 50px;
 }
 
 .social__link{
-  color: var(--project-grey);
+  color: $project-grey;
   font-weight: 500;
   letter-spacing: 0.28px;
   margin-left: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover{
-      color: var(--project-blue);
+      color: $project-blue;
     }
 }
 .header .container{
