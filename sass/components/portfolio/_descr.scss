@@ -1,27 +1,27 @@
 
 .descr{
-  padding-bottom: 114px;
+  padding: 94px 0;
   border-top: 1px solid #ECECEC;
 }
 .descr__list{
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 30px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 32px;
 
 }
 .descr-list__item{
 
   border: 1px solid #EEE;
-  background: var(--web-studio-white);
+  background: $web-studio-white;
   padding: 0 0 20px;
   flex-basis:calc((100% - 60px ) / 3);  
   cursor: pointer;
 
   position: relative;
   overflow: hidden;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
     &:hover{
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
       box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     }
     &:hover .descr__overlay{
@@ -50,7 +50,7 @@
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: $web-studio-white;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 62px 23px;
   width: 100%;
@@ -65,7 +65,7 @@
 }
 
 .descr-list__title{
-  color: var(--project-black);
+  color: $project-black;
   font-size: 18px;
   line-height: 2; /* 200% */
   letter-spacing: 1.08px;
@@ -73,7 +73,7 @@
   padding-left: 24px;
 }
 .descr-list__category{
-  color: var(--project-grey);
+  color: $project-grey;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.875; 

@@ -9,7 +9,7 @@
   gap: 30px;
 }
 
-.rules-list_title{
+.rules-list__title{
   color: $project-black;
   letter-spacing: 0.42px;
   text-transform: uppercase;
@@ -26,7 +26,7 @@
   content: "";
   display: inline-block;
   background-position: center;
-  background-color:  #F5F4FA;
+  background-color:  $web-studio-bgc;
   background-repeat: no-repeat;
   width: 270px;
   height: 120px;

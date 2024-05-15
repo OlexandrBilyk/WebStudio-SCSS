@@ -30,7 +30,6 @@ ul, p, h2, button, figure, figcaption {
   margin: 0;
 }
 
-/* container */
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -42,29 +41,38 @@ button {
   border: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
 header {
   /* outline: 2px solid burlywood; */
-  padding: 24px 0 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
 }
 
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: clamp(1.875rem, -4.602rem + 32.39vw, 19.688rem);
 }
 
 .header__pages {
   display: flex;
-  gap: 93px;
+  gap: clamp(1.25rem, -0.409rem + 8.3vw, 5.813rem);
 }
 
 .logo {
   color: rgb(33, 150, 243);
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.78px;
   text-decoration: none;
+  max-width: 145px;
 }
 
 .logo2 {
@@ -121,7 +129,7 @@ header {
 
 .contacts {
   display: flex;
-  gap: 50px;
+  gap: clamp(0.625rem, 0.17rem + 2.27vw, 1.875rem);
 }
 
 .contacts__item {
@@ -149,6 +157,7 @@ header {
 }
 
 .social__link {
+  width: 135px;
   color: rgb(117, 117, 117);
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -159,16 +168,11 @@ header {
   color: rgb(33, 150, 243);
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .hero {
   background-color: #2F303A;
   padding: 200px 0;
   width: 100%;
+  height: 100%;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero2img.jpg");
   background-position: center;
   background-size: cover;
@@ -200,7 +204,7 @@ header {
   margin: 0 auto;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  background: rgb(33, 150, 243);
+  background-color: rgb(33, 150, 243);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
 }
@@ -216,7 +220,7 @@ header {
   gap: 30px;
 }
 
-.rules-list_title {
+.rules-list__title {
   color: #2F303A;
   letter-spacing: 0.42px;
   text-transform: uppercase;
@@ -302,7 +306,7 @@ header {
 
 .team {
   padding: 94px 0;
-  background: #F5F4FA;
+  background-color: #F5F4FA;
 }
 
 .team__list {
@@ -314,7 +318,6 @@ header {
 .team-list__item {
   border-radius: 0px 0px 4px 4px;
   background: #FFF;
-  width: 270px;
   padding-bottom: 30px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -328,8 +331,11 @@ header {
 }
 
 .team-list__img {
-  width: 270px;
-  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
   flex-shrink: 0;
   margin-bottom: 30px;
 }
@@ -463,6 +469,11 @@ header {
   color: #FFF;
 }
 
+.footer-adress__network {
+  display: flex;
+  gap: 70px;
+}
+
 .footer-contacts__link {
   color: rgb(117, 117, 117);
   font-weight: 500;
@@ -475,7 +486,6 @@ header {
 }
 
 .footer-pages__title {
-  font-family: var(--font-family);
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -485,6 +495,7 @@ header {
 
 .footer__networks {
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(4, 44px);
   gap: 10px;
 }
@@ -605,13 +616,14 @@ header {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: web-studio-gray;
 }
 
 .modal-form__input {
+  display: block;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   margin: 7px 0 10px;
   cursor: pointer;
@@ -645,7 +657,7 @@ header {
   padding: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
   cursor: text;
@@ -667,7 +679,7 @@ header {
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: web-studio-gray;
 }
 
 .modal-form__check {
@@ -706,7 +718,7 @@ header {
   display: block;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: #188ce8;
+  background-color: rgb(33, 150, 243);
   padding: 10px 52px;
   margin: 30px auto 0;
   font-size: 16px;
@@ -732,4 +744,113 @@ header {
 }
 .modal-icon__close:hover {
   fill: #2196f3;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    padding: 26px 0;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .nav-list__link {
+    font-size: 14px;
+    letter-spacing: 2%;
+  }
+  .contacts {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(0.313rem, -0.208rem + 1.74vw, 0.625rem);
+  }
+  .header__pages {
+    gap: clamp(1.25rem, -0.295rem + 7.73vw, 5.5rem);
+  }
+  .header .container {
+    gap: clamp(1.875rem, -5rem + 22.92vw, 6rem);
+  }
+  .hero__title {
+    margin: 0 0;
+  }
+  .hero__btn {
+    margin: 30px auto;
+  }
+  .rules {
+    padding: 60px 0;
+  }
+  .rules__list {
+    grid-template-columns: repeat(2, 354px);
+  }
+  .rules-list__item::before {
+    width: 354px;
+  }
+  .rules-list__title {
+    margin: 30px 0 10px;
+  }
+  .about {
+    display: none;
+  }
+  .team {
+    padding: 60px 0;
+  }
+  .team__list {
+    grid-template-columns: repeat(2, 354px);
+  }
+  .team__title {
+    margin: 0 0 30px;
+  }
+  .customers {
+    padding: 60px 0;
+  }
+  .customer__list {
+    grid-template-columns: repeat(3, 226px);
+  }
+  .customer-list__item {
+    width: 226px;
+  }
+  .customer-list__icon {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer-adress__network {
+    display: flex;
+    gap: 165px;
+  }
+  .footer .container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .footer-pages__input {
+    width: 450px;
+  }
+  .footer-pages__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__address {
+    margin: 20px 0 8px;
+  }
+  .footer__pages--left {
+    align-items: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .footer-pages__btn {
+    width: 200px;
+  }
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+  .modal-list__item {
+    width: 370px;
+  }
+  .modal-form__text {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 3%;
+  }
 }/*# sourceMappingURL=main.css.map */

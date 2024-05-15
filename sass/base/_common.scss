@@ -25,7 +25,6 @@ ul, p, h2, button, figure, figcaption{
   padding: 0;
   margin: 0;
 }
-/* container */
 .container{
   width: 1200px;
   padding: 0 15px;
@@ -34,4 +33,9 @@ ul, p, h2, button, figure, figcaption{
 button{
   cursor: pointer;
   border: none;
+}
+img{
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }

@@ -45,18 +45,19 @@
   font-size: 20px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: $portfolio-black;
 }
 .modal-form__label{
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: web-studio-gray;
 }
 .modal-form__input{
+  display: block;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   margin: 7px 0 10px;
   cursor: pointer;
@@ -89,7 +90,7 @@
   padding: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
   cursor: text;
@@ -111,14 +112,14 @@
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: web-studio-gray;
 }
 .modal-form__check{
   appearance: none;
   border-radius: 1px;
   width: 16px;
   height: 15px;
-  outline: 1.8px solid #212121;
+  outline: 1.8px solid $portfolio-black;
   position: relative;
   cursor: pointer;
     &:checked::after{
@@ -131,7 +132,7 @@
       height: 100%;
       border-radius: 2px;
       outline: 3px solid $svg-hover;
-      background-color: #2196f3;
+      background-color: $svg-hover;
       display: flex;
       justify-content: center;
       align-items:center;
@@ -144,8 +145,8 @@
 .form-btn__submit{
   display: block;
   border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: #188ce8;
+  box-shadow: 0 4px 4px 0 $box-shadow-black;
+  background-color: $project-blue;
   padding: 10px 52px;
   margin: 30px auto 0;
 
