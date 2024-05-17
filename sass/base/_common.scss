@@ -5,6 +5,9 @@ body{
   line-height: normal;
   font-weight: 700;
 }
+address{
+  font-style: normal;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -38,4 +41,25 @@ img{
   display: block;
   width: 100%;
   max-width: 100%;
+}
+.title{
+  color: $web-studio-white;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.button{
+  color: $web-studio-white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875; /* 187.5% */
+  letter-spacing: 0.96px;
+  padding: 10px 32px;
+  display: block;
+  margin: 0 auto;
+  
+ 
+  border-radius: 4px;
+  background-color: $project-blue;
+  box-shadow: 0px 4px 4px 0px $box-shadow-black;  
 }

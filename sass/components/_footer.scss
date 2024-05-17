@@ -12,27 +12,24 @@
   align-items:center ;
   gap: 70px;
 }
-.footer__pages--left{
+.footer-contacts{
   display: flex;
   flex-direction: column;
 }
-#footer-logo__white{
+.footer-contacts__logo--studio{
   color: $web-studio-white;
 }
-.footer__contacts{
+.address{
   display: flex;
   gap: 9px;
   flex-direction: column;
+  width: 230px;
 }
-.footer__address{
-  margin: 20px 0 13px;
+.address__city{
+  margin: 20px 0 0;
   color: $web-studio-white;
 }
-.footer-adress__network{
-  display: flex;
-  gap: 70px;
-}
-.footer-contacts__link{
+.address__contacts{
   color: $project-grey;
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -42,21 +39,18 @@
     color: $project-blue;
   }
 }
-.footer-pages__title{
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $web-studio-white;
+.footer-join__title{
   margin-bottom: 20px;
+  letter-spacing: 0.03em;
 }
-.footer__networks{
+.networks-list{
   display: grid;
   place-items: center;
   grid-template-columns: repeat(4, 44px);
   gap: 10px;
   
 }
-.footer-network__item{
+.networks-list__item{
   display: inline-block;
   padding: 12px;
   border-radius: 22px;
@@ -67,16 +61,24 @@
     cursor: pointer;
   }
 }
-.footer-network__icon{
+.netwoks-list__icon--footer{
+
   fill: $web-studio-white;
   width: 20px;
   height: 20px;
 }
-.footer-pages__form{
+.subscribe-form{
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 12px;
 }
-.footer-pages__input{
+.subscribe-form__label{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.subscribe-form__input{
   border: 1px solid $footer-input-border;
   border-radius: 4px;
   width: 358px;
@@ -92,25 +94,16 @@
   color: $input-color;
 }
 
-.footer-pages__btn{
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 $box-shadow-black;
-  background-color: $svg-hover;
-  padding: 10px 28px;
-  height: 50px;
-
-
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: $web-studio-white;
+.subscribe-form__btn{
+  position: relative;
+  left: 0;
+  top: 17px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.footer-pages__icon{
+.subscribe-form__icon{
   width: 21px;
   height: 21px;
   fill: $web-studio-white;
-  position: relative;
-  left: 6px;
-  top: 4px;
 }

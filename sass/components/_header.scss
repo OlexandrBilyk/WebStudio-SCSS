@@ -22,18 +22,11 @@ header{
   font-weight: 700;
   letter-spacing: 0.78px;
   text-decoration: none; 
-  max-width: 145px;
-
- 
+  display: flex;
+  align-items: center;
 }
-.logo2{
 
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  letter-spacing: 0.78px;
-  text-decoration: none;
-}
-#header-logo__black{
+.header-spacer__logo--studio{
   color: $project-black;
 }
 .navigation{
@@ -42,7 +35,7 @@ header{
   justify-content: space-between;
 
 }
-.nav__list{
+.nav-list{
   display: flex;
   gap: 50px;
 }

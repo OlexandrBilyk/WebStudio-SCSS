@@ -1,9 +1,8 @@
 .about{
-  /* outline: 2px solid blue; */
   padding: 0 0 94px;
 }
 
-.about__list{
+.about-list{
   display: grid;
   grid-template-columns: repeat(3, 370px);
   gap: 30px;
@@ -23,7 +22,7 @@
   width: 370px;
   flex-shrink: 0;
 }
-.about-list__texte{
+.about-list__text{
   font-size: 12px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -34,6 +33,6 @@
   padding: 27px 113px ;
   letter-spacing: 0.03em;
   position: absolute;
-  bottom:3px;
+  bottom:0;
   
 }
