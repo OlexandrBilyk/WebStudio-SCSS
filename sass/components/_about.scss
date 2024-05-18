@@ -28,11 +28,10 @@
   text-transform: uppercase;
   text-align: center;
   color: $web-studio-white;   
-  width: 370px;
+  min-width: 370px;
   background-color:$about-list-text;
   padding: 27px 113px ;
   letter-spacing: 0.03em;
   position: absolute;
   bottom:0;
-  
 }
