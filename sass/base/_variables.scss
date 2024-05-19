@@ -16,7 +16,7 @@ $colors: (
   "input-backgound": rgba(33, 150, 243, 0),
 );
 $Raleway: (
-  'Raleway':font-weight 700,
+  "Raleway": 'Raleway',
 );
 @function getFont($key2) {
   @return map-get($Raleway, $key2);

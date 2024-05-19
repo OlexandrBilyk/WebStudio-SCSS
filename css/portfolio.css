@@ -14,7 +14,10 @@ html {
   scroll-behavior: smooth;
 }
 
-a:focus, button:focus, input:focus, textarea:focus {
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
   outline: none;
   border-color: #2196f3;
   box-shadow: 0 0 5px #2196f3;
@@ -29,7 +32,12 @@ ul {
   list-style-type: none;
 }
 
-ul, p, h2, button, figure, figcaption {
+ul,
+p,
+h2,
+button,
+figure,
+figcaption {
   padding: 0;
   margin: 0;
 }
@@ -117,7 +125,7 @@ img {
 
 .logo {
   color: rgb(33, 150, 243);
-  font-family: font-weight 700, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.78px;
