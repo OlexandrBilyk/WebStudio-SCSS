@@ -1,52 +1,48 @@
-.rules{
-  /* outline: 3px dashed purple; */
-  padding: 94px 0 ;
-
+.rules {
+  padding: 94px 0;
 }
-.rules-list{
+.rules-list {
   display: grid;
-  grid-template: none / repeat(4, 270px); 
+  grid-template: none / repeat(4, 270px);
   gap: 30px;
-}
-
-.rules-list__title{
-  color: $project-black;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  margin: 30px 0 10px;
-}
-.rules-list__text{
-  color: $project-grey;
-  font-weight: 400;
-  line-height: 1.71429; /* 171.429% */
-  letter-spacing: 0.42px;
-}
-
-.rules-list__item::before{
-  content: "";
-  display: inline-block;
-  background-position: center;
-  background-color:  $web-studio-bgc;
-  background-repeat: no-repeat;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-}
-.rules-list__item{
-  &:nth-child(1)::before{
-    content:"" ;
-    background-image:url('../images/anntena1.svg');
+  &__title {
+    color: getColor('project-black');
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin: 30px 0 10px;
   }
-  &:nth-child(2)::before{
-    content:"";
-    background-image:url('../images/clock1.svg');
+  &__text {
+    color: getColor('project-grey');
+    font-weight: 400;
+    line-height: 1.71429; /* 171.429% */
+    letter-spacing: 0.42px;
   }
-  &:nth-child(3)::before{
-    content:"";
-    background-image: url('../images/diagram1.svg');
+  &__item::before {
+    content: "";
+    display: inline-block;
+    background-position: center;
+    background-color: getColor('web-studio-bg');
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
   }
-  &:nth-child(4)::before{
-    content:"";
-    background-image: url('../images/astronaut1.svg') ;
+  .rules-list__item {
+    &:nth-child(1)::before {
+      content: "";
+      background-image: url("../images/anntena1.svg");
+    }
+    &:nth-child(2)::before {
+      content: "";
+      background-image: url("../images/clock1.svg");
+    }
+    &:nth-child(3)::before {
+      content: "";
+      background-image: url("../images/diagram1.svg");
+    }
+    &:nth-child(4)::before {
+      content: "";
+      background-image: url("../images/astronaut1.svg");
+    }
   }
 }

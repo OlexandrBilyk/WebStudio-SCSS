@@ -43,12 +43,12 @@ img{
   max-width: 100%;
 }
 .title{
-  color: $web-studio-white;
+  color: getColor('web-studio-white');
   line-height: 16px;
   text-transform: uppercase;
 }
 .button{
-  color: $web-studio-white;
+  color: getColor('web-studio-white');
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -60,6 +60,6 @@ img{
   
  
   border-radius: 4px;
-  background-color: $project-blue;
-  box-shadow: 0px 4px 4px 0px $box-shadow-black;  
+  background-color: getColor('project-blue');
+  box-shadow: 0px 4px 4px 0px getColor('box-shadow-black');  
 }
