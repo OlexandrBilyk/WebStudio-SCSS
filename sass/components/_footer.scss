@@ -1,7 +1,7 @@
 .footer {
   /* outline: 2px solid red; */
   padding: 60px 0;
-  background-color: getColor('project-black');
+  background-color: getColor("project-black");
   & .container {
     display: flex;
     align-items: center;

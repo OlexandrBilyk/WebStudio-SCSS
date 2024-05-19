@@ -1,7 +1,7 @@
 .about {
   padding: 0 0 94px;
   &__title {
-    color: getColor('project-black');
+    color: getColor("project-black");
     text-align: center;
     font-size: 36px;
     letter-spacing: 1.08px;
@@ -29,9 +29,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: getColor('web-studio-white');
+    color: getColor("web-studio-white");
     min-width: 370px;
-    background-color: getColor('about-list-text');
+    background-color: getColor("about-list-text");
     padding: 27px 113px;
     letter-spacing: 0.03em;
     position: absolute;

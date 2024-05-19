@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   &__logo--studio {
-    color: getColor('web-studio-white');
+    color: getColor("web-studio-white");
   }
 }
 .address {
@@ -12,16 +12,16 @@
   width: 230px;
   &__city {
     margin: 20px 0 0;
-    color: getColor('web-studio-white');
+    color: getColor("web-studio-white");
   }
   &__contacts {
-    color: getColor('project-grey');
+    color: getColor("project-grey");
     font-weight: 500;
     letter-spacing: 0.28px;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
-      color: getColor('project-blue');
+      color: getColor("project-blue");
     }
   }
 }

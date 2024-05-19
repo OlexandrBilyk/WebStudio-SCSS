@@ -6,13 +6,13 @@
   grid-template: none / repeat(4, 270px);
   gap: 30px;
   &__title {
-    color: getColor('project-black');
+    color: getColor("project-black");
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin: 30px 0 10px;
   }
   &__text {
-    color: getColor('project-grey');
+    color: getColor("project-grey");
     font-weight: 400;
     line-height: 1.71429; /* 171.429% */
     letter-spacing: 0.42px;
@@ -21,7 +21,7 @@
     content: "";
     display: inline-block;
     background-position: center;
-    background-color: getColor('web-studio-bg');
+    background-color: getColor("web-studio-bg");
     background-repeat: no-repeat;
     width: 270px;
     height: 120px;

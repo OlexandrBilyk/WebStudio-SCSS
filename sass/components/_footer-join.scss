@@ -8,15 +8,15 @@
     display: inline-block;
     padding: 12px;
     border-radius: 22px;
-    background-color: getColor('footer-network-bg');
+    background-color: getColor("footer-network-bg");
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
-      background-color: getColor('svg-hover');
+      background-color: getColor("svg-hover");
       cursor: pointer;
     }
   }
   &__icon--footer {
-    fill: getColor('web-studio-white');
+    fill: getColor("web-studio-white");
     width: 20px;
     height: 20px;
   }

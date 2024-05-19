@@ -4,7 +4,7 @@
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: getColor('portfolio-black');
+    color: getColor("portfolio-black");
     margin-bottom: 59px;
   }
 }
@@ -15,26 +15,26 @@
   &__item {
     width: 170px;
     height: 92px;
-    border: 1px solid getColor('icon-gray');
+    border: 1px solid getColor("icon-gray");
     border-radius: 4px;
     padding: 17px 30px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
-      border-color: getColor('svg-hover');
+      border-color: getColor("svg-hover");
       cursor: pointer;
     }
     &:hover svg {
-      fill: getColor('svg-hover');
+      fill: getColor("svg-hover");
     }
   }
   &__icon {
     width: 106px;
     height: 60px;
-    fill: getColor('icon-gray');
+    fill: getColor("icon-gray");
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
-      fill: getColor('svg-hover');
+      fill: getColor("svg-hover");
     }
   }
 }

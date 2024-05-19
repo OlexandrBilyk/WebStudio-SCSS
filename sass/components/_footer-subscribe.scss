@@ -13,19 +13,19 @@
     gap: 20px;
   }
   &__input {
-    border: 1px solid getColor('footer-input-border');
+    border: 1px solid getColor("footer-input-border");
     border-radius: 4px;
     width: 358px;
     height: 50px;
-    box-shadow: 0 4px 4px 0 getColor('box-shadow-black');
-    background-color: getColor('input-backgound');
+    box-shadow: 0 4px 4px 0 getColor("box-shadow-black");
+    background-color: getColor("input-backgound");
     padding: 13px 15px;
 
     font-weight: 400;
     font-size: 16px;
     line-height: 125%;
     letter-spacing: 0.03em;
-    color: getColor('input-color');
+    color: getColor("input-color");
   }
   &__btn {
     display: flex;
@@ -35,6 +35,6 @@
   &__icon {
     width: 21px;
     height: 21px;
-    fill: getColor('web-studio-white');
+    fill: getColor("web-studio-white");
   }
 }

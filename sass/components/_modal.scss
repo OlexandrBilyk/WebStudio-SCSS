@@ -27,14 +27,14 @@
   padding: 40px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: getColor('web-studio-white');
+  background-color: getColor("web-studio-white");
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &__title {
     font-size: 20px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: getColor('portfolio-black');
+    color: getColor("portfolio-black");
   }
   &__accept {
     display: flex;
@@ -54,7 +54,7 @@
     border-radius: 1px;
     width: 16px;
     height: 15px;
-    outline: 1.8px solid getColor('portfolio-black');
+    outline: 1.8px solid getColor("portfolio-black");
     position: relative;
     cursor: pointer;
     &:checked::after {
@@ -66,8 +66,8 @@
       width: 100%;
       height: 100%;
       border-radius: 2px;
-      outline: 3px solid getColor('svg-hover');
-      background-color: getColor('svg-hover');
+      outline: 3px solid getColor("svg-hover");
+      background-color: getColor("svg-hover");
       display: flex;
       justify-content: center;
       align-items: center;
@@ -75,7 +75,7 @@
   }
   &__link {
     text-decoration: underline;
-    color: getColor('svg-hover');
+    color: getColor("svg-hover");
   }
   &__submit {
     margin: 30px auto 0;
@@ -84,7 +84,7 @@
     padding: 8px 11px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 100%;
-    background-color: getColor('web-studio-white');
+    background-color: getColor("web-studio-white");
     position: absolute;
     top: 8px;
     right: 8px;
@@ -93,7 +93,7 @@
     width: 11px;
     height: 11px;
     &:hover {
-      fill: getColor('svg-hover');
+      fill: getColor("svg-hover");
     }
   }
 }
@@ -121,12 +121,12 @@
     cursor: pointer;
     padding-left: 41px;
 
-    outline-color: getColor('svg-hover');
+    outline-color: getColor("svg-hover");
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:hover + .modal-list__icon {
-      border-color: getColor('svg-hover');
-      fill: getColor('svg-hover');
+      border-color: getColor("svg-hover");
+      fill: getColor("svg-hover");
     }
   }
   &__icon {
@@ -139,7 +139,7 @@
     cursor: pointer;
 
     &:hover {
-      fill: getColor('ыvg-hover');
+      fill: getColor("ыvg-hover");
     }
   }
   &__comment {
@@ -154,7 +154,7 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      border-color: getColor('svg-hover');
+      border-color: getColor("svg-hover");
     }
   }
 }
