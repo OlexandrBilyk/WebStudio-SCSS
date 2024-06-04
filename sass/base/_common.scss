@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: getFont("Roboto");
   font-size: 14px;
   font-style: normal;
   line-height: normal;
@@ -51,23 +51,5 @@ img {
   width: 100%;
   max-width: 100%;
 }
-.title {
-  color: getColor("web-studio-white");
-  line-height: 16px;
-  text-transform: uppercase;
-}
-.button {
-  color: getColor("web-studio-white");
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875; /* 187.5% */
-  letter-spacing: 0.96px;
-  padding: 10px 32px;
-  display: block;
-  margin: 0 auto;
 
-  border-radius: 4px;
-  background-color: getColor("project-blue");
-  box-shadow: 0px 4px 4px 0px getColor("box-shadow-black");
-}
+

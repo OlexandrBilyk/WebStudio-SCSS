@@ -1,0 +1,15 @@
+@mixin btn($btn-color, $color, $fontS, $border-radius, $fontW, $padd) {
+  background-color: $btn-color;
+  color: $color;
+  font-size: $fontS;
+  border-radius: $border-radius;
+  font-weight: $fontW;
+  padding: $padd;
+}
+@mixin text($color, $fontW, $fontS, $lineH, $letterS){
+  color: $color;
+  font-weight: $fontW;
+  font-size: $fontS;
+  line-height: $lineH;
+  letter-spacing: $letterS;
+}

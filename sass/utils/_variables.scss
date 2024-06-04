@@ -15,13 +15,15 @@ $colors: (
   "input-color": rgba(255, 255, 255, 0.6),
   "input-backgound": rgba(33, 150, 243, 0),
 );
-$Raleway: (
-  "Raleway": 'Raleway',
-);
-@function getFont($key2) {
-  @return map-get($Raleway, $key2);
-}
-
 @function getColor($key) {
   @return map-get($colors, $key);
+}
+$fonts: (
+  "Raleway": #{"Raleway",
+  sans-serif},
+  "Roboto": #{"Roboto",
+  sans-serif},
+);
+@function getFont($key) {
+  @return map-get($fonts, $key);
 }

@@ -2,20 +2,17 @@
   padding: 94px 0;
 }
 .rules-list {
-  display: grid;
-  grid-template: none / repeat(4, 270px);
-  gap: 30px;
+  @extend %flex-between;
+  &__item{
+    max-width: 270px;
+  }
   &__title {
-    color: getColor("project-black");
-    letter-spacing: 0.42px;
+    @include text(getColor("portfolio-black"), 700, 14px, base, 0.03em);
     text-transform: uppercase;
     margin: 30px 0 10px;
   }
   &__text {
-    color: getColor("project-grey");
-    font-weight: 400;
-    line-height: 1.71429; /* 171.429% */
-    letter-spacing: 0.42px;
+    @include text(getColor("portfolio-grey"), 400, 14px, 1.71429, 0.42px);
   }
   &__item::before {
     content: "";
@@ -27,7 +24,7 @@
     height: 120px;
     border-radius: 4px;
   }
-  .rules-list__item {
+  &__item {
     &:nth-child(1)::before {
       content: "";
       background-image: url("../images/anntena1.svg");

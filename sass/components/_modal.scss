@@ -31,23 +31,15 @@
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &__title {
-    font-size: 20px;
-    letter-spacing: 0.03em;
+    @include text(getColor("project-black"), 700, 20px, base, 0.03em);
     text-align: center;
-    color: getColor("portfolio-black");
   }
   &__accept {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     gap: 8px;
   }
   &__label {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: web-studio-gray;
+    @include text(getColor('web-studio-gray'), 400, 14px ,1.71, 0.03em);
   }
   &__check {
     appearance: none;
@@ -68,17 +60,12 @@
       border-radius: 2px;
       outline: 3px solid getColor("svg-hover");
       background-color: getColor("svg-hover");
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @extend %flex-center;
     }
   }
   &__link {
     text-decoration: underline;
     color: getColor("svg-hover");
-  }
-  &__submit {
-    margin: 30px auto 0;
   }
   &__btn-close {
     padding: 8px 11px;
@@ -96,20 +83,30 @@
       fill: getColor("svg-hover");
     }
   }
+  &__submit{
+      @include btn(
+      getColor("project-blue"),
+      getColor("web-studio-white"),
+      16px,
+      4px,
+      700,
+      10px 52px
+    );
+    line-height: 1.875; /* 187.5% */
+    letter-spacing: 0.96px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px getColor("box-shadow-black");
+    margin: 30px auto 0;
+  }
 }
 .modal-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   &__item {
     width: 448px;
     position: relative;
   }
   &__label {
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    color: web-studio-gray;
+    @include text(getColor("web-studio-gray"), 400, 12px, base, 0.01em);
   }
   &__input {
     display: block;

@@ -8,9 +8,12 @@
   align-items: flex-end;
   gap: 12px;
   &__label {
+    @include text(getColor("web-studio-white"), 700, 14px, base, 0.03em);
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    text-transform: uppercase;
   }
   &__input {
     border: 1px solid getColor("footer-input-border");
@@ -21,16 +24,24 @@
     background-color: getColor("input-backgound");
     padding: 13px 15px;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: 0.03em;
-    color: getColor("input-color");
+    @include text(getColor("input-color"), 400, 16px, 1.25, 0.03em);
   }
   &__btn {
-    display: flex;
-    align-items: center;
+    @extend %flex-center;
     gap: 10px;
+    @include btn(
+      getColor("project-blue"),
+      getColor("web-studio-white"),
+      16px,
+      4px,
+      700,
+      10px 30px
+    );
+    line-height: 1.875; /* 187.5% */
+    letter-spacing: 0.96px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px getColor("box-shadow-black");
   }
   &__icon {
     width: 21px;

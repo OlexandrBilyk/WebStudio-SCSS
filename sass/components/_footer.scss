@@ -3,8 +3,7 @@
   padding: 60px 0;
   background-color: getColor("project-black");
   & .container {
-    display: flex;
-    align-items: center;
+    @extend %flex-center;
     gap: 70px;
   }
 }

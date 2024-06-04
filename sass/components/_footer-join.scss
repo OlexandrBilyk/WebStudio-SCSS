@@ -1,6 +1,8 @@
 .footer-join {
   &__title {
-    font-size: 14px;
+    @include text(getColor("web-studio-white"), 700, 14px, base, 0.03em);
+
+    text-transform: uppercase;
   }
 }
 .networks-list {

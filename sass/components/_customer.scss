@@ -1,17 +1,13 @@
 .customers {
   padding: 95px 0;
   &__title {
-    font-size: 36px;
-    letter-spacing: 0.03em;
+    @include text(getColor("project-black"), 700, 36px, base, 0.03em);
     text-align: center;
-    color: getColor("portfolio-black");
     margin-bottom: 59px;
   }
 }
 .customer-list {
-  display: grid;
-  grid-template-columns: repeat(6, 170px);
-  gap: 30px;
+  @extend %flex-between;
   &__item {
     width: 170px;
     height: 92px;

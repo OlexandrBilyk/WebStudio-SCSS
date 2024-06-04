@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="./css/main.min.css">
         <script src="./js/modal.js " defer></script>
 </head>
-<footer>
     <header class="header" data-aos="fade-up">
         <div class="container">
             <div class="header__pages">
@@ -62,7 +61,7 @@
         <section class="hero" data-aos="fade-up">
         <div class="container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>  
-            <button type="button" class="button hero__btn" data-open-modal >Замовити послугу</button> 
+            <button type="button" class="hero__btn" data-open-modal >Замовити послугу</button> 
             </div>
         </section>
     <section class="rules" data-aos="fade-up">
@@ -120,8 +119,10 @@
             <h2 class="team__title">Наша команда</h2>
         <ul class="team-list">
         <li class="team-list__item">
+            <div class="team-list__thumb">
             <img class="team-list__img" 
             src="./images/team1.jpg" alt="Igor">
+            </div>
             <p class="team-list__name">
                 Ігор Дем'яненко
             </p>
@@ -160,7 +161,9 @@
             </ul> 
         </li>
             <li class="team-list__item">
+            <div class="team-list__thumb">
             <img class="team-list__img" src="./images/team2.jpg" alt="Olga">
+            </div>
             <p class="team-list__name">Ольга Рєпіна</p><p  class="team-list__work">Frontend Developer</p>
             <ul class="networks-list">
                 <li class="networks-list__item">
@@ -194,7 +197,9 @@
             </ul> 
         </li>
            <li class="team-list__item"> 
+            <div class="team-list__thumb">
             <img class="team-list__img" src="./images/team3.jpg" alt="Mykola">
+            </div>
             <p class="team-list__name">Микола Тарасов</p><p  class="team-list__work"> Marketing</p>
             <ul class="networks-list">
                 <li class="networks-list__item">
@@ -228,7 +233,9 @@
             </ul> 
         </li>
             <li class="team-list__item">
+                <div class="team-list__thumb">
                 <img class="team-list__img" src="./images/team4.jpg" alt="Mykhailo">
+            </div>
             <p class="team-list__name">Михайло Єрмаков</p><p  class="team-list__work">UI Designer</p>
             <ul class="networks-list">
                 <li class="networks-list__item">
@@ -334,7 +341,7 @@
         </address>
     </section>
         <section class="footer-join">
-            <h3 class="title footer-join__title">приєднуйтесь</h3>
+            <h3 class="footer-join__title">приєднуйтесь</h3>
             <ul class="networks-list">
             <li class="networks-list__item">
                 <a href="#" class="networks-list__link">
@@ -368,7 +375,7 @@
         </section>
         <section class="footer-subscribe">
             <form class="subscribe-form">
-                <label class="title subscribe-form__label">Підпишіться на розсилку
+                <label class="subscribe-form__label">Підпишіться на розсилку
                 <input type="email" placeholder="E-mail" class="input subscribe-form__input">
                 </label>
                 <button class="button subscribe-form__btn" type="submit">Підписатися 
@@ -425,7 +432,7 @@
                         </a>
                     </label>
                 </div>
-                <button type="submit" class="button modal__submit">Відправити</button>
+                <button type="submit" class="modal__submit">Відправити</button>
                 <button class="modal__btn-close" data-close-modal >
                     <svg class="modal__icon-close">
                         <use href="./images/icons/symbol-defs.svg#icon-modal1">
@@ -433,8 +440,7 @@
                         </use>
                     </svg>
                 </button>
-             </form> 
-                
+             </form>        
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

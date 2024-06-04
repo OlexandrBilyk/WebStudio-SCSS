@@ -1,22 +1,16 @@
-
-@import './base/variables' ;
-@import './base/common' ;
-@import './components/networks';
-@import './components/header' ;
-@import './components/hero' ;
-@import './components/rules' ;
-@import './components/about' ;
-@import './components/team' ;
-@import './components/customer' ;
-@import './components/footer' ;
-@import './components/footer-contacts';
-@import './components/footer-join';
-@import './components/footer-subscribe';
-@import './components/modal' ;
-
-
-
-
-
-
-
+@import "./utils/variables";
+@import "./base/common";
+@import './utils/placeholders';
+@import "./utils/mixins";
+@import "./components/networks";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/rules";
+@import "./components/about";
+@import "./components/team";
+@import "./components/customer";
+@import "./components/footer";
+@import "./components/footer-contacts";
+@import "./components/footer-join";
+@import "./components/footer-subscribe";
+@import "./components/modal";
