@@ -1,6 +1,7 @@
 .footer-join {
   &__title {
-    @include text(getColor("web-studio-white"), 700, 14px, base, 0.03em);
+    @include text($fontW: 700);
+    color: getColor("web-studio-white");
 
     text-transform: uppercase;
   }

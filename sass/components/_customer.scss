@@ -1,8 +1,8 @@
 .customers {
   padding: 95px 0;
   &__title {
-    @include text(getColor("project-black"), 700, 36px, base, 0.03em);
-    text-align: center;
+    @include text(36px, 700, $textA:center);
+    color: getColor("project-black");
     margin-bottom: 59px;
   }
 }

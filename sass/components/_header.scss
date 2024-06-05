@@ -12,7 +12,9 @@
 }
 .logo,
 .header-spacer__logo {
-  @include text(getColor("project-blue"), 700, 30px, base, 0.78px);
+  // @include text(, 700, 30px, base, 0.78px);
+  @include text(30px, 700, $letterS: 0.78px);
+  color: getColor("project-blue");
   font-family: getFont("Raleway");
   @extend %flex-center;
 }
@@ -30,7 +32,8 @@
     position: relative;
   }
   &__link {
-    @include text(getColor("project-black"), 500, 14px, normal, 0.28px);
+    @include text($fontW:500, $letterS: 0.28px);
+    color: getColor("portfolio-black");
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       color: getColor("project-blue");
@@ -77,7 +80,8 @@
 }
 
 .social-link {
-  @include text(getColor("project-grey"), 500, 14px, base, 0.28px);
+  @include text($fontW:500, $letterS: 0.03em);
+  color: getColor("project-grey");
   width: 135px;
   margin-left: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

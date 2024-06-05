@@ -1,8 +1,8 @@
 .about {
   padding: 0 0 94px;
   &__title {
-    @include text(getColor("project-black"), 700, 36px, base, 0.03em);
-    text-align: center;
+    color: getColor("project-black");
+    @include text(36px, 700, $textA:center);
     margin: 0 0 50px;
   }
 }
@@ -26,9 +26,9 @@
     }
   }
   &__text {
-    @include text(getColor("web-studio-white"), 700, 12px, 1.71, 0.03em );
+    @include text(12px, 700, $textA:center);
+    color: getColor("web-studio-white");
     text-transform: uppercase;
-    text-align: center;
     min-width: 370px;
     background-color: getColor("about-list-text");
     padding: 27px 113px;

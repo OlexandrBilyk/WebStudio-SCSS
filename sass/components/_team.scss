@@ -2,8 +2,9 @@
   padding: 94px 0;
   background-color: getColor("web-studio-bg");
   &__title {
-    @include text(getColor("project-black"), 500, 36px, base, 1.08px);
-    text-align: center;
+    // @include text(, 500, 36px, base, 1.08px);
+    @include text(36px, 500, $letterS: 1.08px, $textA: center);
+    color: getColor("project-black");
     margin: 50px;
   }
 }
@@ -27,12 +28,12 @@
     
   }
   &__name {
-    @include text(etColor("project-black"), 500, 16px, base, 0.48px);
-    text-align: center;
+    @include text(16px, 500, $textA:center);
+    color: getColor("project-black");
     margin-bottom: 10px;
   }
   &__work {
-    @include text(getColor("project-grey"), 400, 16px, base, 0.48px);
-    text-align: center;
+    @include text(16px, $textA: center);
+    color: getColor("project-grey");
   }
 }

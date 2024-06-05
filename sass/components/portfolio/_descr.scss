@@ -1,5 +1,5 @@
 .descr {
-  padding: 0 0 177px 0;
+  padding: 0 0 94px 0;
 }
 .descr-list {
   display: grid;
@@ -25,13 +25,13 @@
     }
   }
   &__title {
-    @include text("portfolio-black", 700, 18px, 2, 0.06em);
-    letter-spacing: 1.08px;
+    @include text(18px, 700, 2, 1.08px);
     margin-top: 20px;
     padding-left: 24px;
   }
   &__category {
-    @include text(getColor("web-studio-gray"), 400, 16px, 1.875, 0.48px);
+    @include text(16px, 400, 1.875);
+    color: getColor('web-studio-gray');
     padding-left: 24px;
   }
 }
@@ -55,7 +55,8 @@
     transition: transform 0.5s ease;
   }
   &__text {
-    @include text(getColor("web-studio-white"), 400, 18px, 1.56, 0.03em);
+    @include text(18px, 400, 1.56);
+    color: getColor('web-studio-white');
     background-color: rgba(33, 150, 243, 0.9);
     padding: 62px 23px;
     width: 100%;

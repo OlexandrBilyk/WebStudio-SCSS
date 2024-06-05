@@ -1,15 +1,17 @@
-@mixin btn($btn-color, $color, $fontS, $border-radius, $fontW, $padd) {
+@mixin btn($btn-color, $padd) {
   background-color: $btn-color;
-  color: $color;
-  font-size: $fontS;
-  border-radius: $border-radius;
-  font-weight: $fontW;
+  color: getColor('web-studio-white');
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 700;
   padding: $padd;
+  line-height: 1.875;
+  letter-spacing: 0.96px;
 }
-@mixin text($color, $fontW, $fontS, $lineH, $letterS){
-  color: $color;
+@mixin text($fontS: 14px, $fontW: 400, $lineH: normal, $letterS: 0.03em, $textA: left){
   font-weight: $fontW;
   font-size: $fontS;
   line-height: $lineH;
   letter-spacing: $letterS;
+  text-align: $textA;
 }
