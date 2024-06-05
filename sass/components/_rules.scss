@@ -14,7 +14,7 @@
   }
   &__text {
     // @include text(, 400, 14px, 1.71429, 0.42px);
-    @include text($fontW:700, $letterS:0.42px, $lineH: 1.71, $textA: center);
+    @include text($fontW:400, $letterS:0.42px, $lineH: 1.71);
     color: getColor("web-studio-gray");
   }
   &__item::before {
