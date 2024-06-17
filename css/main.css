@@ -780,7 +780,6 @@ img {
 }
 
 .modal {
-  min-width: 450px;
   min-height: 600px;
   border-radius: 4px;
   position: absolute;
@@ -817,6 +816,7 @@ img {
           appearance: none;
   border-radius: 1px;
   width: 16px;
+  min-width: 11px;
   height: 15px;
   outline: 1.8px solid #212121;
   position: relative;
@@ -925,6 +925,16 @@ img {
   border-color: #2196f3;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .modal {
+    width: 90%;
+  }
+}
+@media (min-width: 320px) and (max-width: 469px) {
+  .modal {
+    padding: 15px;
+  }
+}
 @media (min-width: 1200px) {
   .modal {
     min-width: 528px;
