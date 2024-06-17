@@ -1,4 +1,4 @@
-@mixin btn($btn-color, $padd) {
+@mixin btn($btn-color:getColor('svg-hover'), $padd) {
   background-color: $btn-color;
   color: getColor('web-studio-white');
   font-size: 16px;

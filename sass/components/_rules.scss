@@ -1,48 +1,60 @@
 .rules {
-  padding: 94px 0;
-}
-.rules-list {
-  @extend %flex-between;
-  &__item{
-    max-width: 270px;
+    padding: 60px 0;
   }
-  &__title {
-    @include text($fontW:700);
-    color: getColor("portfolio-black");
-    text-transform: uppercase;
-    margin: 30px 0 10px;
-  }
-  &__text {
-    // @include text(, 400, 14px, 1.71429, 0.42px);
-    @include text($fontW:400, $letterS:0.42px, $lineH: 1.71);
-    color: getColor("web-studio-gray");
-  }
-  &__item::before {
-    content: "";
-    display: inline-block;
-    background-position: center;
-    background-color: getColor("web-studio-bg");
-    background-repeat: no-repeat;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-  }
-  &__item {
-    &:nth-child(1)::before {
-      content: "";
-      background-image: url("../images/anntena1.svg");
+  .rules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__title {
+      color: getColor("portfolio-black");
+      @include text($fontW: 700, $textA: center);
+      text-transform: uppercase;
+      margin: 30px 0 10px;
     }
-    &:nth-child(2)::before {
-      content: "";
-      background-image: url("../images/clock1.svg");
+    &__text {
+      color: getColor("web-studio-gray");
+      @include text($fontW: 400, $letterS: 0.42px, $lineH: 1.71);
     }
-    &:nth-child(3)::before {
-      content: "";
-      background-image: url("../images/diagram1.svg");
+    &__item {
+      max-width: 450px;
+      &:nth-child(1)::before {
+        content: "";
+        background-image: url("../images/anntena1.svg");
+      }
+      &:nth-child(2)::before {
+        content: "";
+        background-image: url("../images/clock1.svg");
+      }
+      &:nth-child(3)::before {
+        content: "";
+        background-image: url("../images/diagram1.svg");
+      }
+      &:nth-child(4)::before {
+        content: "";
+        background-image: url("../images/astronaut1.svg");
+      }
     }
-    &:nth-child(4)::before {
+    &__item::before {
       content: "";
-      background-image: url("../images/astronaut1.svg");
+      display: inline-block;
+      background-position: center;
+      background-color: getColor("web-studio-bg");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 120px;
+      border-radius: 4px;
+    }
+  }
+
+@media (min-width: 1200px) {
+  .rules {
+    padding: 94px 0;
+  }
+  .rules-list {
+    flex-direction: row;
+    &__item{
+      flex: 1 1 calc((100% - 90px)/4);
+      max-width: 270px;
     }
   }
 }

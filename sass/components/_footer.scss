@@ -1,9 +1,19 @@
 .footer {
-  /* outline: 2px solid red; */
-  padding: 60px 0;
-  background-color: getColor("project-black");
-  & .container {
-    @extend %flex-center;
-    gap: 70px;
+    padding: 60px 0;
+    background-color: getColor("project-black");
+
+    .container {
+      @extend %flex-center;
+      flex-wrap: wrap;
+      gap: 60px;
+    }
+  }
+@media (min-width: 1200px) {
+  .footer {
+    
+    .container {
+      flex-wrap: nowrap;
+      gap: 70px;
+    }
   }
 }

@@ -1,26 +1,28 @@
 .footer-join {
   &__title {
-    @include text($fontW: 700);
+    @include text($fontW: 700, $textA: center);
     color: getColor("web-studio-white");
-
     text-transform: uppercase;
   }
 }
-.networks-list {
+.network-list {
   &__item {
-    display: inline-block;
     padding: 12px;
     border-radius: 22px;
     background-color: getColor("footer-network-bg");
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-      background-color: getColor("svg-hover");
-      cursor: pointer;
-    }
   }
   &__icon--footer {
     fill: getColor("web-studio-white");
-    width: 20px;
-    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-join {
+    &__title {
+      text-align: left;
+    }
   }
 }

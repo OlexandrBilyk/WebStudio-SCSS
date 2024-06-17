@@ -1,91 +1,122 @@
+
 .header {
-  @extend %flex-between;
-  padding: 24px 0;
-  &__pages {
-    display: flex;
-    gap: clamp(1.25rem, -0.409rem + 8.3vw, 5.813rem);
-  }
-  & .container {
-    @extend %flex-center;
-    gap: clamp(1.875rem, -4.602rem + 32.39vw, 19.688rem);
-  }
+  display: flex;
+  padding: 16px 0;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
 }
 .logo,
-.header-spacer__logo {
-  // @include text(, 700, 30px, base, 0.78px);
-  @include text(30px, 700, $letterS: 0.78px);
+.header-pages__logo {
+  @include text(24px, 700, $letterS: 0.78px);
   color: getColor("project-blue");
   font-family: getFont("Raleway");
   @extend %flex-center;
 }
-.header-spacer__logo--studio {
+.header-pages__logo--studio {
   color: getColor("project-black");
-}
-.navigation {
-  @extend %flex-between;
-  align-items: center;
 }
 .nav-list {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+
   &__item {
     position: relative;
   }
   &__link {
-    @include text($fontW:500, $letterS: 0.28px);
+    @include text($fontS: 40px, $fontW: 500, $letterS: 0.28px);
     color: getColor("portfolio-black");
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       color: getColor("project-blue");
     }
-    &::after {
-      content: "";
-      background-color: getColor("svg-hover");
-      border-radius: 2px;
-      width: 0;
-      height: 4px;
-      position: absolute;
-      top: 45px;
-      left: 0;
-      transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &:hover::after {
-      width: 100%;
-    }
   }
 }
-
 .contacts {
   display: flex;
-  gap: clamp(0.625rem, 0.17rem + 2.27vw, 1.875rem);
-
+  
   &__item {
     @extend %flex-center;
-    &:hover svg {
-      fill: getColor("svg-hover");
-    }
-  }
-  &__icon {
-    fill: getColor("web-studio-gray");
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__icon--email {
-    width: 16px;
-    height: 12px;
-  }
-  &__icon--phone {
-    width: 10px;
-    height: 16px;
   }
 }
+@media (min-width:320px) and (max-width:1023px){
+  .contacts__icon{
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
+    &__pages {
+      display: flex;
+      align-items: center;
+      gap: clamp(1.25rem, -0.409rem + 8.3vw, 5.813rem);
+    }
+    & .container {
+      // @extend %flex-center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(1.25rem, -5.386rem + 33.18vw, 19.5rem);
+    }
+  }
+  .logo,
+  .header-pages__logo {
+    @include text(30px, 700, $letterS: 0.78px);
+  }
+  .nav-list {
+    gap: 40px;
+    &__link {
+      @include text($fontS: 14px, $fontW: 500, $letterS: 0.28px);
+      &::after {
+        content: "";
+        background-color: getColor("svg-hover");
+        border-radius: 2px;
+        width: 0;
+        height: 4px;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
 
-.social-link {
-  @include text($fontW:500, $letterS: 0.03em);
-  color: getColor("project-grey");
-  width: 135px;
-  margin-left: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    color: getColor("project-blue");
+  .contacts {
+    gap: 21px;
+    &__item {
+      &:hover svg {
+        fill: getColor("svg-hover");
+      }
+    }
+
+    &__icon {
+      fill: getColor("web-studio-gray");
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon--email {
+      max-width: 16px;
+      max-height: 12px;
+    }
+    &__icon--phone {
+      max-width: 10px;
+      max-height: 16px;
+    }
+  }
+
+  .social-link {
+    @include text($fontS: 1em, $fontW: 500, $letterS: 0.03em);
+    color: getColor("project-grey");
+    width: 135px;
+    margin-left: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: getColor("project-blue");
+    }
   }
 }
