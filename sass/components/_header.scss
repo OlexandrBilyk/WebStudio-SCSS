@@ -1,9 +1,17 @@
-
 .header {
   display: flex;
   padding: 16px 0;
-}
 
+  &__pages {
+    display: flex;
+    align-items: center;
+    gap: clamp(1.25rem, -0.409rem + 8.3vw, 5.813rem);
+  }
+  .container {
+    @extend %flex-center;
+    gap: clamp(1.25rem, -5.386rem + 33.18vw, 19.5rem);
+  }
+}
 .logo {
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +34,7 @@
     position: relative;
   }
   &__link {
-    @include text($fontS: 40px, $fontW: 500, $letterS: 0.28px);
+    @include text($fontS: 14px, $fontW: 500, $letterS: 0.28px);
     color: getColor("portfolio-black");
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
@@ -34,32 +42,84 @@
     }
   }
 }
+
 .contacts {
   display: flex;
-  
+  flex-wrap: wrap;
   &__item {
     @extend %flex-center;
   }
 }
-@media (min-width:320px) and (max-width:1023px){
-  .contacts__icon{
+.social-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: getColor("web-studio-gray");
+  &:hover {
+    color: getColor("project-blue");
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .contacts__icon {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+  .header {
+    padding: 26px 0;
+
+    .container{
+      gap: 93px;
+    }
+  }
+    .logo {
+      flex-wrap: nowrap;
+    }
+    .nav-list {
+      gap: 51px;
+      flex-wrap: nowrap;
+
+      &__link {
+        @include text($fontS: 14px, $fontW: 500, $letterS: 0.28px);
+      }
+    }
+    .contacts {
+      flex-wrap: wrap;
+      gap: 10px;
+
+      &__icon {
+        fill: getColor("web-studio-gray");
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      &__icon--email {
+        max-width: 14px;
+        max-height: 10px;
+      }
+      &__icon--phone {
+        max-width: 10px;
+        max-height: 14px;
+      }
+    }
+  }
+  .social-link {
+
+    @include text($fontS: 12px, $fontW: 500, $letterS: 0.03em);
+    margin-left: 8px;
+  }
+@media (min-width: 1024px) {
   .header {
     padding: 24px 0;
+  
     &__pages {
       display: flex;
       align-items: center;
-      gap: clamp(1.25rem, -0.409rem + 8.3vw, 5.813rem);
+      gap: 93px;
     }
-    & .container {
+    .container {
       // @extend %flex-center;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: clamp(1.25rem, -5.386rem + 33.18vw, 19.5rem);
+      gap: 312px;
     }
   }
   .logo,
@@ -86,37 +146,35 @@
       }
     }
   }
-
   .contacts {
-    gap: 21px;
+    flex-direction: row;
+    flex-wrap: nowrap;
     &__item {
       &:hover svg {
         fill: getColor("svg-hover");
       }
-    }
-
-    &__icon {
-      fill: getColor("web-studio-gray");
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__icon--email {
       max-width: 16px;
       max-height: 12px;
     }
     &__icon--phone {
-      max-width: 10px;
       max-height: 16px;
     }
   }
-
   .social-link {
-    @include text($fontS: 1em, $fontW: 500, $letterS: 0.03em);
-    color: getColor("project-grey");
-    width: 135px;
-    margin-left: 10px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-      color: getColor("project-blue");
+    font-size: 14px;
+    margin-left: 9px;
+  }
+}
+@media (min-width:1025px) and (max-width:1169px){
+  .header{
+
+    .container{
+      gap: 150px;
+    }
+    .social-link{
+      font-size: 14px;
     }
   }
 }

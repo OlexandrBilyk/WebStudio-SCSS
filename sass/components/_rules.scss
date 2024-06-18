@@ -16,7 +16,7 @@
       @include text($fontW: 400, $letterS: 0.42px, $lineH: 1.71);
     }
     &__item {
-      max-width: 450px;
+      flex: 1 1 calc(100% / 1);
       &:nth-child(1)::before {
         content: "";
         background-image: url("../images/anntena1.svg");
@@ -45,16 +45,26 @@
       border-radius: 4px;
     }
   }
-
-@media (min-width: 1200px) {
+@media (min-width:768px){
+  .rules-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__item{
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    &__title{
+      text-align: left;
+    }
+  }
+}
+@media (min-width: 1024px) {
   .rules {
     padding: 94px 0;
   }
   .rules-list {
     flex-direction: row;
     &__item{
-      flex: 1 1 calc((100% - 90px)/4);
-      max-width: 270px;
+      flex-basis: calc((100% - 90px)/4);
     }
   }
 }

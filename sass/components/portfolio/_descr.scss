@@ -63,8 +63,20 @@
     height: 100%;
   }
 }
+@media (min-width:768px){
+  .descr-list{
 
-@media (min-width: 1200px) {
+    &__item{
+      flex-basis: calc((100% - 30px)/ 2);
+
+      &--solo{
+        flex-grow: 0;
+      }
+    }
+
+  }
+}
+@media (min-width: 1024px) {
   .descr {
     padding: 0 0 94px 0;
   }

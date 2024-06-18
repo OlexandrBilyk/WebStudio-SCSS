@@ -9,7 +9,6 @@
   gap: 15px 8px;
 
   &__btn {
-    flex: 1 1 calc((100% - 32px) / 5);
     padding: 6px 22px;
     border-radius: 4px;
     background-color: getColor("web-studio-bg");
@@ -29,7 +28,20 @@
     }
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+  .category {
+    padding: 60px 30px;
+  }
+  .category-list {
+    max-width: 600px;
+    margin: 0 auto;
+
+    &__btn {
+      flex-basis: calc((100% - 32px) / 5);
+    }
+  }
+}
+@media (min-width: 1024px) {
   .category {
     padding: 95px 0 50px;
   }

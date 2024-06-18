@@ -1,55 +1,61 @@
 .customers {
-    padding: 60px 0;
-    &__title {
-      @include text(28px, 700, $textA: center);
-      color: getColor("project-black");
-      margin-bottom: 30px;
-    }
+  padding: 60px 0;
+  &__title {
+    @include text(28px, 700, $textA: center);
+    color: getColor("project-black");
+    margin-bottom: 30px;
   }
-  .customer-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    &__item{
-      flex: 1 1 calc((100% - 30px) / 2);
-      border: 1px solid getColor("icon-gray");
-      border-radius: 4px;
-      padding: 16px 51px;
-      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover {
-        border-color: getColor("svg-hover");
-        cursor: pointer;
-      }
-      &:hover svg {
-        fill: getColor("svg-hover");
-      }
-    }
-    &__icon {
-      display: block;
-      margin: 0 auto;
-      max-width: 106px;
-      max-height: 60px;
-      fill: getColor("icon-gray");
+}
+.customer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  &__item {
+    flex: 1 1 calc((100% - 30px) / 2);
+    border: 1px solid getColor("icon-gray");
+    border-radius: 4px;
+    padding: 16px 51px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      border-color: getColor("svg-hover");
       cursor: pointer;
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover {
-        fill: getColor("svg-hover");
-      }
+    }
+    &:hover svg {
+      fill: getColor("svg-hover");
     }
   }
-
-@media (min-width: 1200px) {
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    max-width: 106px;
+    max-height: 60px;
+    fill: getColor("icon-gray");
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: getColor("svg-hover");
+    }
+  }
+}
+@media (min-width: 768px) {
+  .customer-list {
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+}
+@media (min-width: 1024px) {
   .customers {
     padding: 95px 0;
     &__title {
-      @include text(36px, 700, $textA: center);
+      font-size: 36px;
       margin-bottom: 59px;
     }
   }
   .customer-list {
     flex-direction: row;
     &__item {
-      flex: 1 1 calc((100% - 150px) / 6);
+      flex-basis: calc((100% - 150px) / 6);
       padding: 17px 30px;
     }
   }

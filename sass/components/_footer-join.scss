@@ -18,9 +18,18 @@
     max-height: 20px;
   }
 }
+@media (min-width: 768px){
+  .footer-join{
 
-@media (min-width: 1200px) {
+    margin-left: 140px;
+  }
+}
+@media (min-width: 1024px) {
   .footer-join {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
     &__title {
       text-align: left;
     }
