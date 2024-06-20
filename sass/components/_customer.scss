@@ -1,15 +1,28 @@
 .customers {
   padding: 60px 0;
+
+  @media (min-width: 1024px) {
+    padding: 95px 0;
+  }
   &__title {
     @include text(28px, 700, $textA: center);
     color: getColor("project-black");
     margin-bottom: 30px;
+
+    @media (min-width: 1024px) {
+      font-size: 36px;
+      margin-bottom: 59px;
+    }
   }
 }
 .customer-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
   &__item {
     flex: 1 1 calc((100% - 30px) / 2);
     border: 1px solid getColor("icon-gray");
@@ -23,6 +36,15 @@
     &:hover svg {
       fill: getColor("svg-hover");
     }
+
+    @media (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+    @media (min-width: 1024px) {
+      flex-basis: calc((100% - 150px) / 6);
+      padding: 17px 30px;
+    }
   }
   &__icon {
     display: block;
@@ -34,29 +56,6 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       fill: getColor("svg-hover");
-    }
-  }
-}
-@media (min-width: 768px) {
-  .customer-list {
-    &__item {
-      flex-basis: calc((100% - 60px) / 3);
-    }
-  }
-}
-@media (min-width: 1024px) {
-  .customers {
-    padding: 95px 0;
-    &__title {
-      font-size: 36px;
-      margin-bottom: 59px;
-    }
-  }
-  .customer-list {
-    flex-direction: row;
-    &__item {
-      flex-basis: calc((100% - 150px) / 6);
-      padding: 17px 30px;
     }
   }
 }

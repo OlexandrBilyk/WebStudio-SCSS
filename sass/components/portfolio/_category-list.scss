@@ -1,6 +1,14 @@
 .category {
   border-top: 1px solid #ececec;
   padding: 61px 0 40px;
+
+  @media (min-width: 768px) {
+    padding: 60px 30px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 95px 0 50px;
+  }
 }
 .category-list {
   max-width: 350px;
@@ -8,6 +16,10 @@
   flex-wrap: wrap;
   gap: 15px 8px;
 
+  @media (min-width: 768px) {
+    max-width: 600px;
+    margin: 0 auto;
+  }
   &__btn {
     padding: 6px 22px;
     border-radius: 4px;
@@ -26,31 +38,9 @@
         0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
       animation: jumpbtn 1s ease infinite alternate;
     }
-  }
-}
-@media (min-width: 768px) {
-  .category {
-    padding: 60px 30px;
-  }
-  .category-list {
-    max-width: 600px;
-    margin: 0 auto;
 
-    &__btn {
+    @media (min-width: 768px) {
       flex-basis: calc((100% - 32px) / 5);
-    }
-  }
-}
-@media (min-width: 1024px) {
-  .category {
-    padding: 95px 0 50px;
-  }
-  .category-list {
-    margin: 0 auto;
-    max-width: 600px;
-
-    &__btn {
-      flex: 1 1 calc((100% - 32px) / 5);
     }
   }
 }

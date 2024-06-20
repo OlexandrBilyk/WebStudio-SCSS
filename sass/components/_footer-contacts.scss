@@ -1,46 +1,45 @@
 .footer-contacts {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 
-    &__logo {
-      justify-content: flex-start;
-    }
-
-    &__logo--studio {
-      color: getColor("web-studio-white");
-    }
-  }
-  .address {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 9px;
-    max-width: 230px;
-
-    &__city {
-      color: getColor("web-studio-white");
-      margin: 20px 0 0;
-    }
-    &__contacts {
-      @include text($fontW: 400, $letterS: 0.28px);
-      color: getColor("project-grey");
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover {
-        color: getColor("project-blue");
-      }
-    }
-  }
-
-@media (min-width: 1024px) {
-  .footer-contacts{
+  @media (min-width: 1024px) {
+    margin: 0;
     align-items: flex-start;
   }
-  .address {
+  &__logo {
+    justify-content: flex-start;
+  }
+
+  &__logo--studio {
+    color: getColor("web-studio-white");
+  }
+}
+.address {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 9px;
+  max-width: 230px;
+
+  @media (min-width: 1024px) {
     align-items: flex-start;
-    &__contacts {
+  }
+  &__city {
+    color: getColor("web-studio-white");
+    margin: 20px 0 0;
+  }
+  &__contacts {
+    @include text($fontW: 400, $letterS: 0.28px);
+    color: getColor("project-grey");
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: getColor("project-blue");
+    }
+
+    @media (min-width: 1024px) {
       @include text($fontW: 500, $letterS: 0.28px);
     }
   }
