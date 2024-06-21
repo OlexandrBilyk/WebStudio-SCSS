@@ -4,31 +4,54 @@
 
   @media (min-width: 768px) {
     padding: 26px 0;
-    .container {
-      gap: 93px;
-    }
-    @media(max-width:790px){
-      .container{
-        gap: 96px;
-      }
-    }
   }
 
+  @media (min-width: 1024px) {
+    padding: 24px 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(1.25rem, -5.386rem + 33.18vw, 19.5rem);
+
+    @media (min-width: 768px) {
+      gap: 93px;
+    }
+
+    @media (min-width: 790px) {
+      gap: 96px;
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 312px;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1169px) {
+      gap: 150px;
+    }
+  }
   &__pages {
     display: flex;
     align-items: center;
     gap: clamp(1.25rem, -0.409rem + 8.3vw, 5.813rem);
-    @media (max-width:790px){
+
+    @media (max-width: 790px) {
       gap: 40px;
     }
 
-    
-  }
-  .container {
-    @extend %flex-center;
-    gap: clamp(1.25rem, -5.386rem + 33.18vw, 19.5rem);
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      gap: 93px;
+    }
   }
 }
+
 .logo {
   display: flex;
   flex-wrap: wrap;
@@ -37,16 +60,23 @@
     flex-wrap: nowrap;
   }
 }
+
 .logo,
 .header-pages__logo {
   @include text(24px, 700, $letterS: 0.78px);
   color: getColor("project-blue");
   font-family: getFont("Raleway");
   @extend %flex-center;
+
+  @media (min-width: 1024px) {
+    @include text(30px, 700, $letterS: 0.78px);
+  }
 }
+
 .header-pages__logo--studio {
   color: getColor("project-black");
 }
+
 .nav-list {
   display: none;
 
@@ -56,16 +86,23 @@
     flex-wrap: nowrap;
   }
 
+  @media (min-width: 1024px) {
+    gap: 40px;
+  }
+
   &__item {
     position: relative;
   }
+
   &__link {
     @include text($fontS: 14px, $fontW: 500, $letterS: 0.28px);
     color: getColor("portfolio-black");
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover {
       color: getColor("project-blue");
     }
+
     @media (min-width: 768px) {
       @include text($fontS: 14px, $fontW: 500, $letterS: 0.28px);
 
@@ -80,110 +117,178 @@
         left: 0;
         transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
+
       &:hover::after {
         width: 100%;
       }
+    }
+
+    @media (min-width: 1024px) {
+      @include text($fontS: 14px, $fontW: 500, $letterS: 0.28px);
     }
   }
 }
 
 .contacts {
   display: none;
-  &__item {
-    @extend %flex-center;
-  }
 
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+  }
 
-    &__icon {
-      fill: getColor("web-studio-gray");
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__icon--email {
-      max-width: 14px;
-      max-height: 10px;
-    }
-    &__icon--phone {
-      max-width: 10px;
-      max-height: 14px;
-    }
-  }
-}
-.social-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: getColor("web-studio-gray");
-  &:hover {
-    color: getColor("project-blue");
-  }
-  @media (min-width: 768px) {
-    @include text($fontS: 12px, $fontW: 500, $letterS: 0.03em);
-    margin-left: 8px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .contacts__icon {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  .header {
-    padding: 24px 0;
-
-    &__pages {
-      display: flex;
-      align-items: center;
-      gap: 93px;
-    }
-    .container {
-      // @extend %flex-center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 312px;
-    }
-  }
-  .logo,
-  .header-pages__logo {
-    @include text(30px, 700, $letterS: 0.78px);
-  }
-  .nav-list {
-    gap: 40px;
-    &__link {
-      @include text($fontS: 14px, $fontW: 500, $letterS: 0.28px);
-    }
-  }
-  .contacts {
+  @media (min-width: 1024px) {
     flex-direction: row;
     flex-wrap: nowrap;
-    &__item {
+  }
+  &__item {
+    @extend %flex-center;
+
+    @media (min-width: 1024px) {
       &:hover svg {
         fill: getColor("svg-hover");
       }
     }
-    &__icon--email {
+  }
+  &__icon {
+    fill: getColor("web-studio-gray");
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__icon--email {
+    max-width: 14px;
+    max-height: 10px;
+
+    @media (min-width: 1024px) {
       max-width: 16px;
       max-height: 12px;
     }
-    &__icon--phone {
+  }
+
+  &__icon--phone {
+    max-width: 10px;
+    max-height: 14px;
+
+    @media (min-width: 1024px) {
       max-height: 16px;
     }
   }
-  .social-link {
+}
+
+.social-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: getColor("web-studio-gray");
+
+  &:hover {
+    color: getColor("project-blue");
+  }
+
+  @media (min-width: 768px) {
+    @include text($fontS: 12px, $fontW: 500, $letterS: 0.03em);
+    margin-left: 8px;
+  }
+
+  @media (min-width: 1024px) {
     font-size: 14px;
     margin-left: 9px;
   }
 }
-@media (min-width: 1025px) and (max-width: 1169px) {
-  .header {
-    .container {
-      gap: 150px;
+
+.menu-toggle {
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+
+  width: 40px;
+  height: 40px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  svg {
+    fill: rgb(33, 33, 33);
+    width: 24px;
+    height: 24px;
+  }
+}
+.menu-container {
+  padding: 48px 40px 48px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: getColor("web-studio-white");
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.is-open {
+  display: block !important;
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  &:hover svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: getColor("svg-hover");
+  }
+}
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  align-items: flex-start;
+
+  &__link {
+    @include text($fontS: 40px, $fontW: 500, $letterS: 0.28px);
+    color: getColor("portfolio-black");
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: getColor("project-blue");
     }
-    .social-link {
-      font-size: 14px;
+  }
+}
+.menu-contacts {
+  margin: 240px 0 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &__link {
+    @include text($fontS: 24px, $fontW: 500, $letterS: 0.03em);
+
+    &--big {
+      font-size: 34px;
     }
+  }
+}
+.header-network {
+  @extend %flex-center;
+  gap: 20px;
+  &__item {
+    &:nth-child(2) {
+      border-left: 1px solid rgba(33, 33, 33, 0.2);
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding: 0 12px;
+    }
+    &:nth-child(3) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding: 0 12px 0 0;
+    }
+  }
+  &__link {
+    color: getColor("project-blue");
   }
 }
