@@ -29,7 +29,7 @@
     @include text($fontW: 400, $letterS: 0.42px, $lineH: 1.71);
   }
   &__item {
-    flex: 1 1 calc(100% / 1);
+    flex: 1 1 100%;
 
     @media (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);

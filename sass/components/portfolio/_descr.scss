@@ -13,7 +13,7 @@
   // display: grid;
   // grid-template-columns: repeat(3, minmax(354px, 450px));
   &__item {
-    flex: 1 1 calc(100% / 1);
+    flex: 1 1 100%;
     border: 1px solid #eee;
     background: getColor("web-studio-white");
     padding: 0 0 20px;
@@ -80,6 +80,9 @@
     width: 100%;
     height: 100%;
 
+    @media(min-width:320px) and (max-width:380px){
+      padding-top: 40px;
+    }
     @media (min-width: 1024px) {
       padding: 62px 23px;
     }

@@ -1,32 +1,40 @@
-@media (min-width:320px) and (max-width:1199px){
-  .about{
+.about {
+  @media (min-width: 320px) {
+    padding: 0 0 94px;
     display: none;
   }
-}
-@media (min-width: 1200px) {
-  .about {
-    padding: 0 0 94px;
-    &__title {
+  @media (min-width: 1024px) {
+    display: block;
+  }
+  &__title {
+    @media (min-width: 1024px) {
       color: getColor("project-black");
       @include text(36px, 700, $textA: center);
       margin: 0 0 50px;
     }
   }
+}
 
-  .about-list {
+.about-list {
+  @media (min-width: 1024px) {
     display: flex;
-    // @extend %flex-between;
     gap: 30px;
-    &__item {
+  }
+  &__item {
+    @media (min-width: 1024px) {
       flex: 1 1 calc((100% - 60px) / 3);
     }
-    &__thumb {
+  }
+  &__thumb {
+    @media (min-width: 1024px) {
       width: 100%;
       height: 100%;
       overflow: hidden;
       position: relative;
     }
-    &__img {
+  }
+  &__img {
+    @media (min-width: 1024px) {
       object-fit: cover;
       object-position: center;
       width: 100%;
@@ -37,7 +45,9 @@
         transform: scale(1.2);
       }
     }
-    &__text {
+  }
+  &__text {
+    @media (min-width: 1024px) {
       @include text(12px, 700, $textA: center);
       color: getColor("web-studio-white");
       text-transform: uppercase;

@@ -11,6 +11,7 @@
     url("../images/hero2img.jpg");
   @extend %background;
   &__title {
+    max-width: 360px;
     @include text(26px, 900, $letterS: 2.64px, $textA: center);
     color: getColor("web-studio-white");
     display: inline-block;
@@ -18,7 +19,8 @@
     display: block;
     margin: 0 auto 30px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
+      max-width: 696px;
       @include text(44px, 900, $letterS: 2.64px, $textA: center);
     }
   }
