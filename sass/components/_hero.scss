@@ -19,7 +19,7 @@
     display: block;
     margin: 0 auto 30px;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       max-width: 696px;
       @include text(44px, 900, $letterS: 2.64px, $textA: center);
     }

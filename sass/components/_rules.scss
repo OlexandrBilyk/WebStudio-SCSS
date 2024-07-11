@@ -1,7 +1,7 @@
 .rules {
   padding: 60px 0;
 
-  @media (min-width:1024px){
+  @media (min-width: 1200px) {
     padding: 94px 0;
   }
 }
@@ -35,7 +35,7 @@
       flex-basis: calc((100% - 30px) / 2);
     }
 
-    @media(min-width:1024px){
+    @media (min-width: 1200px) {
       flex-basis: calc((100% - 90px) / 4);
     }
     &:nth-child(1)::before {

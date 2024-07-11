@@ -6,7 +6,7 @@
     padding: 26px 0;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     padding: 24px 0;
   }
 
@@ -24,7 +24,7 @@
       gap: 96px;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -44,7 +44,7 @@
       gap: 40px;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       display: flex;
       align-items: center;
       gap: 93px;
@@ -68,7 +68,7 @@
   font-family: getFont("Raleway");
   @extend %flex-center;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     @include text(30px, 700, $letterS: 0.78px);
   }
 }
@@ -86,7 +86,7 @@
     flex-wrap: nowrap;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     gap: 40px;
   }
 
@@ -123,7 +123,7 @@
       }
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       @include text($fontS: 14px, $fontW: 500, $letterS: 0.28px);
     }
   }
@@ -146,7 +146,7 @@
   &__item {
     @extend %flex-center;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       &:hover svg {
         fill: getColor("svg-hover");
       }
@@ -164,7 +164,7 @@
     max-width: 14px;
     max-height: 10px;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       max-width: 16px;
       max-height: 12px;
     }
@@ -174,7 +174,7 @@
     max-width: 10px;
     max-height: 14px;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       max-height: 16px;
     }
   }
@@ -193,7 +193,7 @@
     margin-left: 8px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     font-size: 14px;
     margin-left: 9px;
   }

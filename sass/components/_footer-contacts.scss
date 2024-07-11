@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   flex-direction: column;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     margin: 0;
     align-items: flex-start;
   }
@@ -24,7 +24,7 @@
   gap: 9px;
   max-width: 230px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     align-items: flex-start;
   }
   &__city {
@@ -39,7 +39,7 @@
       color: getColor("project-blue");
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       @include text($fontW: 500, $letterS: 0.28px);
     }
   }

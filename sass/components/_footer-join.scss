@@ -1,9 +1,9 @@
 .footer-join {
-  @media (min-width: 768px) and (max-width:1000px){
+  @media (min-width: 768px) and (max-width: 1000px) {
     margin-left: 140px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     margin: 0;
   }
   &__title {
@@ -11,7 +11,7 @@
     color: getColor("web-studio-white");
     text-transform: uppercase;
 
-    @media (min-width:1024px){
+    @media (min-width: 1200px) {
       text-align: left;
     }
   }

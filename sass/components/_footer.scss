@@ -2,16 +2,16 @@
   padding: 60px 0;
   background-color: getColor("project-black");
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     flex-wrap: wrap;
   }
   .container {
-    @extend %flex-center;
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 60px;
-
-    @media (min-width: 1024px) {
+    row-gap: 60px;
+    @media (min-width: 1200px) {
       align-items: center;
       justify-content: space-between;
       flex-wrap: nowrap;

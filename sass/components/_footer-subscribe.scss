@@ -1,45 +1,52 @@
+.footer-subscribe {
+  min-width: 290px;
+  max-width: 450px;
+  width: 100%;
+  @media (min-width: 1200px) {
+    max-width: 570px;
+  }
+
+  &__title {
+    color: getColor("web-studio-white");
+    @include text($fontW: 700, $textA: center);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @media (min-width:1200px){
+      text-align: left;
+    }
+  }
+}
 .subscribe-form {
-  display: flex;
-  align-items: center;
+  @extend %flex-center;
   flex-direction: column;
   gap: 20px;
-
-  @media (min-width: 1024px) {
+  width: 100%;
+  @media (min-width: 1200px) {
+    justify-content: space-between;
     flex-direction: row;
     align-items: flex-end;
     gap: 12px;
   }
-  &__label {
-    color: getColor("web-studio-white");
-    @include text($fontW: 700);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    text-transform: uppercase;
-
-    @media (min-width: 1024px) {
-      align-items: flex-start;
-    }
-  }
   &__input {
-    width: 440px;
+    width: 100%;
+    height: 50px;
+    max-width: 358px;
     border: 1px solid getColor("footer-input-border");
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 getColor("box-shadow-black");
     background-color: getColor("input-backgound");
-    padding: 15px 16px;
+    padding: 0 16px;
     color: getColor("input-color");
     @include text(16px);
 
-    @media (min-width: 320px) and (max-width: 455px) {
-      width: 300px;
-    }
-    
-    @media (min-width: 1024px) {
-      max-width: 358px;
-    }
+    // @media (min-width: 320px) and (max-width: 455px) {
+    //   width: 300px;
+    // }
+
+    // @media (min-width: 1200px) {
+    //   max-width: 358px;
+    // }
   }
   &__btn {
     display: flex;
@@ -48,7 +55,7 @@
     @include btn(getColor("svg-hover"), 10px 31px);
     box-shadow: 0px 4px 4px 0px getColor("box-shadow-black");
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       @include btn(getColor("svg-hover"), 10px 28px);
     }
   }
@@ -57,7 +64,7 @@
     max-width: 24px;
     max-height: 24px;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       max-width: 21px;
       max-height: 21px;
     }
