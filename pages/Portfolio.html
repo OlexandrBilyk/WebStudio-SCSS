@@ -56,7 +56,7 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="menu__icon">
             <path
               fill-rule="evenodd"
               d="M0 5a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1zM0 10a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1zM0 15a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1z"
@@ -373,15 +373,15 @@
         </section>
         <!-- </> -->
         <section class="footer-subscribe">
+          <h2 class="footer-subscribe__title">Підпишіться на розсилку</h2>
           <form class="subscribe-form">
-            <label class="subscribe-form__label"
-              >Підпишіться на розсилку
               <input
                 type="email"
                 placeholder="E-mail"
-                class="subscribe-form__input"
+                class="input subscribe-form__input"
+                title="Введіть Email"
+                required
               />
-            </label>
             <button class="subscribe-form__btn" type="submit">
               Підписатися
               <svg class="subscribe-form__icon">
@@ -394,7 +394,7 @@
     </footer>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="menu__icon">
           <path
             fill-rule="evenodd"
             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -418,28 +418,28 @@
         <li class="menu-contacts__item">
           <a
             href="mailto:info@devstudio.com"
-            class="social-link menu-contacts__link menu-contacts__link--big"
+            class="social-link menu-contacts__link "
             >info@devstudio.com</a
           >
         </li>
         <li class="menu-contacts__item">
-          <a href="tel:+380961111111" class="social-link menu-contacts__link"
+          <a href="tel:+380961111111" class="social-link menu-contacts__link menu-contacts__link--big"
             >+38 096 111 11 11</a
           >
         </li>
       </ul>
-      <ul class="header-network">
-        <li class="header-network__item">
-          <a href="#" class="header-network__link"> Instagram </a>
+      <ul class="menu-network">
+        <li class="menu-network__item">
+          <a href="#" class="menu-network__link"> Instagram </a>
         </li>
-        <li class="header-network__item">
-          <a href="#" class="header-network__link"> Twitter </a>
+        <li class="menu-network__item">
+          <a href="#" class="menu-network__link"> Twitter </a>
         </li>
-        <li class="header-network__item">
-          <a href="#" class="header-network__link"> Facebook </a>
+        <li class="menu-network__item">
+          <a href="#" class="menu-network__link"> Facebook </a>
         </li>
-        <li class="header-network__item">
-          <a href="#" class="header-network__link"> LinkedIn </a>
+        <li class="menu-network__item">
+          <a href="#" class="menu-network__link"> LinkedIn </a>
         </li>
       </ul>
     </div>

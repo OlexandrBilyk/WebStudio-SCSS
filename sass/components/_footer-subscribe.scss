@@ -39,14 +39,6 @@
     padding: 0 16px;
     color: getColor("input-color");
     @include text(16px);
-
-    // @media (min-width: 320px) and (max-width: 455px) {
-    //   width: 300px;
-    // }
-
-    // @media (min-width: 1200px) {
-    //   max-width: 358px;
-    // }
   }
   &__btn {
     display: flex;
