@@ -60,7 +60,11 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="menu__icon">
+          <svg
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu__icon"
+          >
             <path
               fill-rule="evenodd"
               d="M0 5a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1zM0 10a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1zM0 15a1 1 0 011-1h22a1 1 0 110 2H1a1 1 0 01-1-1z"
@@ -141,11 +145,17 @@
           <ul class="about-list">
             <li class="about-list__item">
               <figure class="about-list__thumb">
-                <img
-                  class="about-list__img"
-                  src="./images/app1.jpg"
-                  alt="Planning"
-                />
+                <picture>
+                  <source
+                    srcset="./images/app1-desktop@2x.jpg 2x"
+                    media="min-width:1200px"
+                  />
+                  <img
+                    class="about-list__img"
+                    src="./images/app1-desktop.jpg"
+                    alt="Designing"
+                  />
+                </picture>
                 <figcaption class="about-list__text">
                   Десктопні додатки
                 </figcaption>
@@ -153,11 +163,17 @@
             </li>
             <li class="about-list__item">
               <figure class="about-list__thumb">
-                <img
-                  class="about-list__img"
-                  src="./images/app2.jpg"
-                  alt="Designing"
-                />
+                <picture>
+                  <source
+                    srcset="./images/app2-desktop@2x.jpg 2x"
+                    media="min-width:1200px"
+                  />
+                  <img
+                    class="about-list__img"
+                    src="./images/app2-desktop.jpg"
+                    alt="Designing"
+                  />
+                </picture>
                 <figcaption class="about-list__text">
                   Мобільні додатки
                 </figcaption>
@@ -165,11 +181,17 @@
             </li>
             <li class="about-list__item">
               <figure class="about-list__thumb">
-                <img
-                  class="about-list__img"
-                  src="./images/app3.jpg"
-                  alt="Design"
-                />
+                <picture>
+                  <source
+                    srcset="./images/app3-desktop.jpg 2x"
+                    media="min-width:1200px"
+                  />
+                  <img
+                    class="about-list__img"
+                    src="./images/app3-desktop@2x.jpg"
+                    alt="Designing"
+                  />
+                </picture>
                 <figcaption class="about-list__text">
                   Мобільні додатки
                 </figcaption>
@@ -184,11 +206,31 @@
           <ul class="team-list">
             <li class="team-list__item">
               <div class="team-list__thumb">
-                <img
-                  class="team-list__img"
-                  src="./images/team1.jpg"
-                  alt="Igor"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team1-desktop.jpg    1x,
+                      ./images/team1-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team1-tablet.jpg    1x,
+                      ./images/team1-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/team1-mobile@2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="team-list__img"
+                    src="./images/team1-mobile.jpg"
+                    alt="Igor"
+                  />
+                </picture>
               </div>
               <p class="team-list__name">Ігор Дем'яненко</p>
               <p class="team-list__work">Product Designer</p>
@@ -245,11 +287,31 @@
             </li>
             <li class="team-list__item">
               <div class="team-list__thumb">
-                <img
-                  class="team-list__img"
-                  src="./images/team2.jpg"
-                  alt="Olga"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team2-desktop.jpg    1x,
+                      ./images/team2-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team2-tablet.jpg    1x,
+                      ./images/team2-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/team2-mobile@2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="team-list__img"
+                    src="./images/team2-mobile.jpg"
+                    alt="Igor"
+                  />
+                </picture>
               </div>
               <p class="team-list__name">Ольга Рєпіна</p>
               <p class="team-list__work">Frontend Developer</p>
@@ -306,11 +368,31 @@
             </li>
             <li class="team-list__item">
               <div class="team-list__thumb">
-                <img
-                  class="team-list__img"
-                  src="./images/team3.jpg"
-                  alt="Mykola"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team3-desktop.jpg    1x,
+                      ./images/team3-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team3-tablet.jpg    1x,
+                      ./images/team3-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/team3-mobile@2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="team-list__img"
+                    src="./images/team3-mobile.jpg"
+                    alt="Igor"
+                  />
+                </picture>
               </div>
               <p class="team-list__name">Микола Тарасов</p>
               <p class="team-list__work">Marketing</p>
@@ -367,11 +449,31 @@
             </li>
             <li class="team-list__item">
               <div class="team-list__thumb">
-                <img
-                  class="team-list__img"
-                  src="./images/team4.jpg"
-                  alt="Mykhailo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team4-desktop.jpg    1x,
+                      ./images/team4-desktop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team4-tablet.jpg    1x,
+                      ./images/team4-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/team4-mobile@2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="team-list__img"
+                    src="./images/team4-mobile.jpg"
+                    alt="Igor"
+                  />
+                </picture>
               </div>
               <p class="team-list__name">Михайло Єрмаков</p>
               <p class="team-list__work">UI Designer</p>
@@ -556,13 +658,13 @@
         <section class="footer-subscribe">
           <h2 class="footer-subscribe__title">Підпишіться на розсилку</h2>
           <form class="subscribe-form">
-              <input
-                type="email"
-                placeholder="E-mail"
-                class="input subscribe-form__input"
-                title="Введіть Email"
-                required
-              />
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="input subscribe-form__input"
+              title="Введіть Email"
+              required
+            />
             <button class="button subscribe-form__btn" type="submit">
               Підписатися
               <svg class="subscribe-form__icon">
@@ -626,7 +728,11 @@
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="menu__icon">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          class="menu__icon"
+        >
           <path
             fill-rule="evenodd"
             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -649,12 +755,14 @@
         <li class="menu-contacts__item">
           <a
             href="mailto:info@devstudio.com"
-            class="social-link menu-contacts__link "
+            class="social-link menu-contacts__link"
             >info@devstudio.com</a
           >
         </li>
         <li class="menu-contacts__item">
-          <a href="tel:+380961111111" class="social-link menu-contacts__link menu-contacts__link--big"
+          <a
+            href="tel:+380961111111"
+            class="social-link menu-contacts__link menu-contacts__link--big"
             >+38 096 111 11 11</a
           >
         </li>
